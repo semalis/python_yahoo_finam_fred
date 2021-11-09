@@ -173,6 +173,7 @@ def read_text_file(path_):
             print(file)
             with open(file, 'r') as f:
                 current_date = os.path.splitext(os.path.basename(file))[0]
+                print(ToDate(current_date))
                 #Читаем файл по абзацам, исключая пустые строки
                 indent = [line.strip() for line in f if line.strip()]
                 #Разбираем абзац на предложения
@@ -207,7 +208,7 @@ days_with_levels = 7
 # start_function(path)
 # from os.path import exists
 # glob(f'{path}\\*.txt')
-# file_exists = exists(glob(f'{path}\\20111109.txt'))
+# file_exists = exists(glob(f'{path}\\20211109.txt'))
 # if file_exists:
 #     print ("Ok")
 
