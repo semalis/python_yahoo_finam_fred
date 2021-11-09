@@ -194,7 +194,7 @@ def read_text_file(path_):
 
 # Запуск!
 # path = '/Users/mazeinsv/PycharmProjects/python_yahoo_finam_fred/RomanAndreev/'
-path = ''
+path = 'Comments/'
 
 # for infile in glob(os.path.join(path, '*.txt')):
 #     print(infile)
