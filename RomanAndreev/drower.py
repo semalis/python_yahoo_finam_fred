@@ -144,7 +144,7 @@ def start_function(path):
         # В этой папке path должны лежать все файлы с рекомендациями от Романа Андреева по датам в формате ГГГГММДД.txt
         # for file in sorted(glob(f'{path}\\*.txt'))[-days_with_levels:]:
         for file in sorted(glob(os.path.join(path, '*.txt')))[-days_with_levels:]:
-            with open(file, 'r') as f:
+            with open(file, 'r', encoding="utf-8") as f:
                 current_date = os.path.splitext(os.path.basename(file))[0]
                 # Читаем файл по абзацам, исключая пустые строки
                 indent = [line.strip() for line in f if line.strip()]

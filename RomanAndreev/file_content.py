@@ -171,7 +171,7 @@ def read_text_file(path_):
     for file in sorted(glob(os.path.join(path, '*.txt')))[-days_with_levels:]:
         # glob(os.path.join(path, '*.txt'))
             print(file)
-            with open(file, 'r') as f:
+            with open(file, 'r',encoding="utf-8") as f:
                 current_date = os.path.splitext(os.path.basename(file))[0]
                 print(ToDate(current_date))
                 #Читаем файл по абзацам, исключая пустые строки
