@@ -75,4 +75,3 @@ def ToDate (date_yyyymmdd):
 # micex = GetCandles ("MICEX", "15min", 10)
 #
 # print(micex)
-
