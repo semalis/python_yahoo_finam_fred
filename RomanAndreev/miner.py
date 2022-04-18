@@ -62,11 +62,9 @@ def GetCandles (ticker, time_frame, period_days):
     # Возвращает Датафрейм Пандас со свечами, соответствующими запросу
     return candles
 
-
 # Преобразует число (или строку) вида 20201030 и строку вида '12:15:00' в объект datetime.datetime(2020, 10, 30, 12, 15)
 def ToDatetime (date_num, time_hhmmss):
     return datetime.strptime(str(date_num) + time_hhmmss, '%Y%m%d%H:%M:%S')
-
 
 # Преобразует строку (или число) вида "20201102" в дату (формат datetime)
 def ToDate (date_yyyymmdd):
@@ -77,6 +75,4 @@ def ToDate (date_yyyymmdd):
 # micex = GetCandles ("MICEX", "15min", 10)
 #
 # print(micex)
-
-
 
