@@ -9,6 +9,7 @@ try:
 except:
     import http.client as httplib
 
+
 def check_internet():
     conn = httplib.HTTPConnection("www.google.com", timeout=5)
     try:
