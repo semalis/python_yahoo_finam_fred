@@ -1,4 +1,3 @@
-
 import difflib
 import re
 import time

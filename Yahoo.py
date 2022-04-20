@@ -4,7 +4,6 @@ from multiprocessing.dummy import Pool
 from datetime import datetime, date
 import time
 
-
 try:
     import httplib
 except:

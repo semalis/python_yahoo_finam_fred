@@ -1,6 +1,12 @@
 from fredapi import Fred
 
-fred = Fred(api_key='39fa3bd07f8f55540a93e075a5f97cc1')
+import configparser
+# Загрузка ключей из файла config
+config = configparser.ConfigParser()
+config.read_file(open('secret.cfg'))
+api_key = config.get('FREED', 'API_KEY')
+
+fred = Fred(api_key=api_key)
 data = fred.get_series('GDP')
 
 print(data.tail())
