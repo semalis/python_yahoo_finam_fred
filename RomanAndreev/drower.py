@@ -106,6 +106,7 @@ def draw_levels (datetime_date, candles, levels):
         DX = DateX(datetime_date, candles)
         plt.plot(DX, [level, level], color = 'dimgray', linewidth = 0.8)
 
+
 # Рисуем зоны на основном графике, соответствующие диапазонам рекомендаций на заданную дату
 def draw_zones (datetime_date, candles, zones):
     for zone in zones:
